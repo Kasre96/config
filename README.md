@@ -14,3 +14,15 @@ After fresh installation run:
 `git config --global user.email <git-email>`
 
 `git config --list` to view
+
+## Bower Set up
+`npm install bower`
+
+## Gulp.js
+`npm install --global gulp-cli`
+
+`npm install -g gulp` (local version)
+
+## Centrifugo
+Extract the binary zip to a folder and add to path
+
