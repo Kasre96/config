@@ -4,8 +4,6 @@
 ### Legitimate Gitlab creds
 url: http://178.62.82.166/dash/dashboard-designs
 
-pwd: Yokasre@12791
-
 ## Git config
 After fresh installation run:
 
@@ -35,3 +33,7 @@ Within the extract folder, run `centrifugo genconfig` to generate config.json
 - install android studio and install android sdk tools, Google USB Driver, Dart SDK and flutter SDK
 - Run `flutter doctor` to check issues and errors
 
+## Laragon Laravel set up
+- Install Laragon
+- Add php/bin to path
+- Install composer
