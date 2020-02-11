@@ -41,7 +41,8 @@ By default, Heroku will launch an Apache web server together with PHP to serve a
 
 However, your application’s document root is the public/ subdirectory, so you need to create a Procfile that [configures the correct document root:](https://devcenter.heroku.com/articles/custom-php-settings#setting-the-document-root)
 
-From your Terminal:
+From your Terminal, run:
+
 `echo "web: vendor/bin/heroku-php-apache2 public/" > Procfile`
 
 `git add .`
