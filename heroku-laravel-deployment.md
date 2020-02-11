@@ -1,8 +1,8 @@
 # Deploying a Laravel application on Heroku
 
 ## Prerequisites
-- Some PHP and Laravel Knowldege ([https://laravel.com/](Getting Started with Laravel))
-- Heroku account. Its free and instant ([https://signup.heroku.com/signup/dc](Heroku))
+- Some PHP and Laravel Knowldege - [Getting Started with Laravel](https://laravel.com/)
+- Heroku account. Its free and instant - [Heroku Sign Up](https://signup.heroku.com/signup/dc)
 - Composer installed locally
 - Git
 
@@ -14,7 +14,8 @@ If you already have your Laravel application, you can skip this step. If not, cr
 ## 2. Install Heroku CLI
 You'll need heroku CLI to deploy to heroku. 
 
-If you are on Linx, run this quick command to install instantly
+If you are on Linux, run this quick command to install instantly
+
 `sudo snap install --classic heroku`
 
 If on windows/mac, follow the instructions [here](https://devcenter.heroku.com/articles/heroku-cli).
@@ -22,7 +23,9 @@ If on windows/mac, follow the instructions [here](https://devcenter.heroku.com/a
 ## 3. Deploy to Heroku
 ### Add Git
 `git init`
+
 `git add .`
+
 `git commit -m "my new laravel app"`
 
 ### Login to heroku CLI
@@ -30,6 +33,7 @@ From your terminal, run `heroku login` and follow the instructions to login.
 
 ### Create heroku app
 Now its time to create your heroku app. This acts like your heroku git repository.
+
 Run `heroku create my-laravel-app`
 
 ### Create a Procfile in your project
@@ -39,7 +43,9 @@ However, your application’s document root is the public/ subdirectory, so you 
 
 From your Terminal:
 `echo "web: vendor/bin/heroku-php-apache2 public/" > Procfile`
+
 `git add .`
+
 `git comit -m "add procfile for heroku"`
 
 ### Set Laravel encryption key
@@ -50,6 +56,7 @@ As it must comply with the rules of the selected cipher in the configuration, th
 You can simply [set environment variables using the `heroku config command`](https://devcenter.heroku.com/articles/config-vars), so run a heroku `config:set` as the last step before deploying your app for the first time:
 
 From your terminal:
+
 `heroku config:set APP_KEY=$(php artisan --no-ansi key:generate --show)`
 
 ### Push to heroku
@@ -66,3 +73,9 @@ Then run any wished comand
 
 ## Run
 To run the app, run `heroku open` from your terminal or navigate to `my-laravel-app.herokuapp.com` in your browser.
+
+## Reference
+[Heroku Dev Center](https://devcenter.heroku.com/articles/getting-started-with-laravel)
+
+# Yours Truly
+[Isaac Mutie](https://github.com/Kasre96)
