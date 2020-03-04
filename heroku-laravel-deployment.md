@@ -22,6 +22,7 @@ If on windows/mac, follow the instructions [here](https://devcenter.heroku.com/a
 
 ## 3. Deploy to Heroku
 ### Add Git
+`cd into the my-laravel-app`
 `git init`
 
 `git add .`
